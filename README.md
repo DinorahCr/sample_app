@@ -1,0 +1,1 @@
+Sample app deals with static pages, rubyonrailstutorial.org
