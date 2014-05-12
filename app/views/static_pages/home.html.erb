@@ -1,38 +1,15 @@
-<div id="home-carousel" class="carousel slide" data-ride="carousel" data-wrap= true>
-		<ol class = "carousel-indicators">
-			<li data-target="#home-carousel" data-slide-to= "0" class = "active"></li>
-			<li data-target="#home-carousel" data-slide-to="1"></li>
-			<li data-target="#home-carousel" data-slide-to="2"></li>
-		</ol>
+<div class="center hero-unit">
+  <h1>Welcome to the Sample App</h1>
 
+  <h2>
+    This is the home page for the
+    <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+    sample application.
+  </h2>
 
-	   <div class = "carousel-inner">
-		    <div class = "container">	
-			<div class = "carousel-caption">
-				<h1>Gates Millennium Scholars Association</h1>
-       			 <p>at University of California, Irvine.</p>
-			</div>
-			</div>
-	   	<div class = "item active">
-			<%= link_to image_tag('uci.jpg'), :class => "img-responsive"%>
-			
-	   </div>
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+</div>
 
-	   <div class = "item">
-			<%= link_to image_tag('rails.png', alt: "GMS group"), :class => "img-responsive" %>
-		</div>
-
-		<div class = "item">
-			<%= link_to image_tag('uci.jpg'), :class => "img-responsive" %>
-	    </div>
-	</div>
-		
-   	   <a class="carousel-control left" href="#home-carousel" data-slide="prev">
-	    <span class="glyphicon glyphicon-chevron-left"></span>
-	  	</a>
-	  	<a class="carousel-control right" href="#home-carousel" data-slide="next">
-	    <span class="glyphicon glyphicon-chevron-right"></span>
-	  	</a>
- </div>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
 
 
