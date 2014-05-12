@@ -1,4 +1,4 @@
-<div id="home-carousel" class="carousel slide" data-ride="carousel">
+<div id="home-carousel" class="carousel slide" data-ride="carousel" data-wrap: true>
 		<ol class = "carousel-indicators">
 			<li data-target="#home-carousel" data-slide-to= "0" class = "active"></li>
 			<li data-target="#home-carousel" data-slide-to="1"></li>
@@ -7,29 +7,23 @@
 
 
 	   <div class = "carousel-inner">
-		    
-	   	<div class = "item active">
-			<%= link_to image_tag('uci.jpg'), :class => "img-responsive"%>
-			<div class = "container">	
+		    <div class = "container">	
 			<div class = "carousel-caption">
 				<h1>Gates Millennium Scholars Association</h1>
        			 <p>at University of California, Irvine.</p>
 			</div>
 			</div>
+	   	<div class = "item active">
+			<%= link_to image_tag('uci.jpg'), :class => "img-responsive"%>
+			
 	   </div>
 
 	   <div class = "item">
-			<%= link_to image_tag("uci.jpg", alt: "GMS group"), :class => "img-responsive" %>
+			<%= link_to image_tag('rails.png', alt: "GMS group"), :class => "img-responsive" %>
 		</div>
 
 		<div class = "item">
-			<%= link_to image_tag("uci.jpg"), :class => "img-responsive"%>
-			<div class = "container">		
-			<div class = "carousel-caption">
-				<h1>Gates Millennium Scholars Association</h1>
-		         <p>at University of California, Irvine.</p>
-			</div>
-			</div>	
+			<%= link_to image_tag('uci.jpg'), :class => "img-responsive" %>
 	    </div>
 	</div>
 		
