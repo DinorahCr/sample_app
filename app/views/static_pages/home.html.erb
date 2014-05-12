@@ -1,41 +1,44 @@
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause= "hover" data-wrap= "true">
+<div id="home-carousel" class="carousel slide" data-ride="carousel">
 		<ol class = "carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to= "0" class = "active"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#home-carousel" data-slide-to= "0" class = "active"></li>
+			<li data-target="#home-carousel" data-slide-to="1"></li>
+			<li data-target="#home-carousel" data-slide-to="2"></li>
 		</ol>
 
 
 	   <div class = "carousel-inner">
 		    
 	   	<div class = "item active">
-			<%= link_to image_tag('uci.jpg')%>
-				
+			<%= link_to image_tag('uci.jpg'), :class => "img-responsive"%>
+			<div class = "container">	
 			<div class = "carousel-caption">
 				<h1>Gates Millennium Scholars Association</h1>
        			 <p>at University of California, Irvine.</p>
 			</div>
+			</div>
 	   </div>
 
-	   <div class = "item active">
-			<%= link_to image_tag("uci.jpg", alt: "GMS group"), '#'%>
+	   <div class = "item">
+			<%= link_to image_tag("uci.jpg", alt: "GMS group"), :class => "img-responsive" %>
 		</div>
 
-		<div class = "item active">
-			<%= link_to image_tag("uci.jpg"), '#' %>
-					
+		<div class = "item">
+			<%= link_to image_tag("uci.jpg"), :class => "img-responsive"%>
+			<div class = "container">		
 			<div class = "carousel-caption">
 				<h1>Gates Millennium Scholars Association</h1>
 		         <p>at University of California, Irvine.</p>
 			</div>
-				
+			</div>	
 	    </div>
 	</div>
 		
-   	   <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+   	   <a class="left carousel-control" href="#home-carousel" data-slide="prev">
 	    <span class="glyphicon glyphicon-chevron-left"></span>
 	  	</a>
-	  	<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+	  	<a class="right carousel-control" href="#home-carousel" data-slide="next">
 	    <span class="glyphicon glyphicon-chevron-right"></span>
 	  	</a>
  </div>
+
+
