@@ -1,35 +1,37 @@
-<div id ="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval=10000 data-pause="hover" data-wrap= true>
-		<ol class= "carousel-indicators">
-			<li data-target="" data-slide-to= "0" class = "active"></li>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-pause= "hover" data-wrap= "true">
+		<ol class = "carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to= "0" class = "active"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 		</ol>
 
-		<div class = "carousel-inner">
 
-		    <div class = "item active">
-			    <%= link_to image_tag('uci.jpg'), class: "img-responsive" %>
+	   <div class = "carousel-inner">
+		    
+	   	<div class = "item active">
+			<%= link_to image_tag('uci.jpg')%>
 				
-					<div class = "carousel-caption">
-					<h1>Gates Millennium Scholars Association</h1>
-       			     <p>at University of California, Irvine.</p>
-					</div>
-	    	</div>
-
-			<div class = "item active">
-				<%= link_to image_tag("rails.png", alt: "GMS group"), '#'%>
+			<div class = "carousel-caption">
+				<h1>Gates Millennium Scholars Association</h1>
+       			 <p>at University of California, Irvine.</p>
 			</div>
+	   </div>
 
-				<div class = "item active">
-					<%= link_to image_tag("rails.png"), '#' %>
-					
-					<div class = "carousel-caption">
-						<h1>Gates Millennium Scholars Association</h1>
-		        		<p>at University of California, Irvine.</p>
-					</div>
-				
-				</div>
+	   <div class = "item active">
+			<%= link_to image_tag("uci.jpg", alt: "GMS group"), '#'%>
 		</div>
+
+		<div class = "item active">
+			<%= link_to image_tag("uci.jpg"), '#' %>
+					
+			<div class = "carousel-caption">
+				<h1>Gates Millennium Scholars Association</h1>
+		         <p>at University of California, Irvine.</p>
+			</div>
+				
+	    </div>
+	</div>
+		
    	   <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
 	    <span class="glyphicon glyphicon-chevron-left"></span>
 	  	</a>
